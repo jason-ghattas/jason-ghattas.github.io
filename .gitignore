@@ -1,5 +1,7 @@
 # Keep this repository focused on the finished Jason portfolio.
 /*
 !/.gitignore
+!/.github/
+!/.github/**
 !/jason portfolio/
 !/jason portfolio/**
