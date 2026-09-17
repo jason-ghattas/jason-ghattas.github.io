@@ -17,7 +17,7 @@ concurrency:
 
 jobs:
   deploy:
-    if: github.repository == 'Sitolic/jason-ghattas-portfolio' || github.repository == 'Sitolic/Sitolic.github.io'
+    if: github.repository == 'Sitolic/jason-ghattas-portfolio' || github.repository == 'Sitolic/Sitolic.github.io' || github.repository == 'jason-ghattas/jason-ghattas.github.io'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
