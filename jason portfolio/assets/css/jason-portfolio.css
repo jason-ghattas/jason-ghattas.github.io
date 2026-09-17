@@ -25,3 +25,23 @@ body{background:#080a0d}.banner__section{background-image:linear-gradient(90deg,
 @media(max-width:991px){.banner__section{background-position:58% center}.jason-portrait{position:relative;left:auto;bottom:auto;height:540px;max-width:520px;margin:25px auto 0}.timeline-item{grid-template-columns:170px minmax(0,1fr)}.leadership-section .leadership{grid-template-columns:1fr;gap:22px}}
 @media(max-width:767px){.banner__section{background-image:linear-gradient(180deg,rgba(0,0,0,.66) 0%,rgba(0,0,0,.75) 58%,rgba(0,0,0,.35) 100%),url('../img/hero-background.png');background-position:center top}.hero-copy h1{line-height:1!important}.hero-copy .designers{margin-top:.11em}.jason-portrait{height:460px}.timeline-item{grid-template-columns:1fr;padding:35px 0}.timeline-item:hover{padding-left:10px}.timeline-meta{align-items:center;flex-wrap:wrap}.experience-index{margin-right:5px}.education-list article{grid-template-columns:42px minmax(0,1fr)}.education-list article time{grid-column:2;text-align:left;margin-top:6px}.language-tiles,.achievement-grid{grid-template-columns:1fr}.leadership-section .leadership{padding:28px 22px}}
 @media(max-width:430px){.hero-copy h1{font-size:36px!important;line-height:1!important}.hero-copy .designers{margin-top:.12em}.jason-portrait{height:400px}.language-tiles article{min-height:130px;padding:22px}.timeline-item h4{font-size:23px}}
+
+/* Hero legibility, project imagery, and black palette refinements */
+:root{--body:#000;--bgsection:#050505;--mtitle:#080808}
+body,main{background:#000}.about__section{background:#050505}.dark-panel{background:#080808}.project__section{background:#000}.service__section{background:#050505}.languages-section{background:#080808}.awoard__section,#achievements{background:#000!important}.leadership-section,#leadership{background:#000!important}.menu-fixed{background:#050505}.preloader__matias{background:#000}
+.hero-copy{position:relative;z-index:2;max-width:min(760px,58vw)}
+.hero-copy h1{font-size:clamp(52px,6.4vw,105px)!important;line-height:1!important;overflow:visible}
+.hero-copy .hone{position:relative;z-index:2;line-height:.92}
+.hero-copy .designers{position:relative;z-index:2;color:var(--lime)!important;-webkit-text-stroke:1px var(--lime);line-height:1.02;margin-top:.11em;overflow:visible;text-shadow:0 0 1px var(--lime)}
+.hero-copy .designers::before{display:none}
+.jason-portrait{left:auto;right:0;width:min(39vw,540px);max-width:none;z-index:1}
+.project-visual{height:330px;background:#0a0a0a;background-image:none}
+.project-visual:after{display:none}
+.project-visual>img{width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .65s cubic-bezier(.2,.7,.2,1),filter .4s;filter:saturate(.9) contrast(1.03)}
+.project-visual>span{z-index:2;left:20px;top:18px;display:grid;place-items:center;width:50px;height:50px;padding:0;border:1px solid rgba(201,243,29,.75);border-radius:50%;background:rgba(0,0,0,.72);backdrop-filter:blur(5px)}
+.engineering-project:hover .project-visual>img{transform:scale(1.055);filter:saturate(1.05) contrast(1.04)}
+.skill-card,.expertise-grid article,.language-tiles article{background:#101010}.leadership-section .leadership{background:#050505}.achievement-list li{border-color:#242424}
+@media(max-width:1199px){.hero-copy{max-width:58vw}.hero-copy h1{font-size:clamp(54px,6.35vw,76px)!important}.jason-portrait{right:0;width:min(39vw,470px)}}
+@media(max-width:991px){.hero-copy{max-width:none}.hero-copy h1{font-size:clamp(54px,8.5vw,72px)!important}.jason-portrait{left:auto;right:auto;width:min(100%,520px);max-width:520px;z-index:1}.project-visual{height:310px}}
+@media(max-width:767px){.hero-copy h1{font-size:clamp(43px,11vw,62px)!important}.hero-copy .designers{margin-top:.12em}.project-visual{height:260px}}
+@media(max-width:430px){.hero-copy h1{font-size:34px!important;letter-spacing:-.055em}.hero-copy .designers{margin-top:.14em}.project-visual{height:220px}}
