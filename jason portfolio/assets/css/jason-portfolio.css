@@ -154,3 +154,8 @@ body,main{background:#000}.about__section{background:#050505}.dark-panel{backgro
   .ivv-case-study[open] .case-content>p{min-height:120px}
   .ivv-case-study[open] .case-content .tags{margin-top:auto}
 }
+
+/* CV-aligned company and role hierarchy */
+.experience-content{min-width:0}.experience-company{display:flex;align-items:baseline;justify-content:space-between;gap:24px;padding-bottom:12px;border-bottom:1px solid #2a2a2a}.experience-company h3{margin:0;color:#fff;font-size:clamp(20px,1.7vw,25px);letter-spacing:.11em}.experience-company .company-years{flex:0 0 auto;color:var(--lime);font-size:20px;font-weight:800;white-space:nowrap}.experience-role{padding-top:18px}.experience-role+.experience-role{margin-top:24px;padding-top:26px;border-top:1px solid #262626}.timeline-item .experience-role h4{margin:0 0 15px;color:#fff;font-size:clamp(20px,2vw,27px);line-height:1.35}.timeline-meta{justify-content:flex-start}.timeline-meta>span:last-child{line-height:1.5}.timeline-item:hover .experience-company{border-color:#4b5d12}
+@media(max-width:767px){.experience-company{gap:14px}.experience-company h3{font-size:19px;letter-spacing:.075em}.experience-company .company-years{font-size:17px}.timeline-item .experience-role h4{font-size:21px}.experience-role+.experience-role{margin-top:20px;padding-top:22px}}
+@media(max-width:430px){.experience-company{align-items:flex-start}.experience-company h3{font-size:17px}.experience-company .company-years{font-size:15px}.timeline-item .experience-role h4{font-size:19px;line-height:1.42}.timeline-item{padding-inline:0}}
