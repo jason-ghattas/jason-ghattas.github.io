@@ -2,12 +2,12 @@
   'use strict';
   const root = document.documentElement;
   const title = {
-    fr: 'Jason Ghattas | Ingénieur Mécatronique, Robotique & Automatisation',
-    en: 'Jason Ghattas | Mechatronics Engineer, Robotics & Automation'
+    fr: 'Jason Ghattas | Ingénieur IVV / IVVQ & Intégration Systèmes E/E',
+    en: 'Jason Ghattas | IVVQ & E/E Systems Integration Engineer'
   };
   const description = {
-    fr: 'Portfolio professionnel de Jason Ghattas, ingénieur en mécatronique spécialisé en robotique, automatisation, intégration système, systèmes embarqués et ingénierie industrielle.',
-    en: 'Professional portfolio of Jason Ghattas, a mechatronics engineer specializing in robotics, automation, system integration, embedded systems and industrial engineering.'
+    fr: 'Portfolio de Jason Ghattas, ingénieur IVV/IVVQ spécialisé en intégration de systèmes E/E, validation ECU/HVAC, réseaux CAN/LIN et automatisation des tests.',
+    en: 'Portfolio of Jason Ghattas, an IVVQ engineer focused on E/E systems integration, ECU/HVAC validation, CAN/LIN networks and test automation.'
   };
   const track = document.querySelector('.engineering-marquee-track');
   const sourceGroup = track && track.querySelector('.engineering-marquee-group');
