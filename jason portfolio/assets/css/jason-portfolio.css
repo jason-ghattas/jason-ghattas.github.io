@@ -112,3 +112,34 @@ body,main{background:#000}.about__section{background:#050505}.dark-panel{backgro
 @media(max-width:991px){.hero-copy h1{font-size:clamp(48px,8vw,68px)!important}.hero-copy .hone{font-size:.8em}.hero-copy .designers{font-size:.61em}.case-study-grid{max-width:760px;margin-inline:auto}}
 @media(max-width:767px){.hero-copy h1{font-size:clamp(39px,10.5vw,57px)!important}.hero-copy .hone{font-size:.82em}.hero-copy .designers{font-size:.64em}.ivv-case-study summary{padding:23px 20px}.case-content{padding:0 20px 22px}.case-metrics b{font-size:21px}}
 @media(max-width:430px){.hero-copy h1{font-size:clamp(33px,9.4vw,40px)!important}.hero-copy .hone{font-size:.84em}.hero-copy .designers{font-size:.66em;letter-spacing:-.035em}.case-metrics{grid-template-columns:1fr}.case-metrics span{min-height:68px}.case-summary h3{font-size:21px}}
+
+/* Responsive title, restrained About typography, and non-confidential case visuals */
+.hero-copy .designers{display:block;font-size:clamp(24px,2.9vw,44px);line-height:1.12;letter-spacing:-.03em;white-space:nowrap}
+.hero-copy .designers::before{width:100%;overflow:visible;white-space:nowrap;clip-path:inset(0 100% 0 0);animation:jason-title-reveal 3.6s ease-in-out infinite}
+.about__section .section-heading h2{max-width:780px;font-size:clamp(34px,3.8vw,58px)}
+.about__section .about-lead p{font-size:clamp(20px,1.7vw,28px);line-height:1.55}
+.about__section .about-detail p{font-size:17px;line-height:1.75}
+.case-visual{margin:24px 0 0;background:#070909;border:1px solid #2c3317;overflow:hidden}
+.case-visual svg{display:block;width:100%;height:auto;background-image:linear-gradient(rgba(201,243,29,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(201,243,29,.035) 1px,transparent 1px);background-size:28px 28px}
+.case-visual figcaption{padding:10px 13px;border-top:1px solid #262d14;color:#8f9677;font-size:11px;line-height:1.4;letter-spacing:.04em;text-transform:uppercase}
+.case-visual+p{margin-top:20px}
+.diagram-links path{fill:none;stroke:#4f5f1d;stroke-width:2;stroke-dasharray:6 6}
+.diagram-node rect{fill:#0e100c;stroke:#66752b;stroke-width:2}
+.diagram-node text{fill:#e7e7e7;font-size:16px;font-weight:700;text-anchor:middle;dominant-baseline:middle}
+.diagram-node--accent rect{fill:#c9f31d;stroke:#c9f31d}
+.diagram-node--accent text{fill:#090909;font-size:21px}
+.diagram-node--accent .diagram-subtext{font-size:10px;font-weight:800;letter-spacing:.15em}
+.diagram-corner-label{fill:#8d9861;font-size:12px;font-weight:700;letter-spacing:.12em}
+.trace-grid path{fill:none;stroke:#242820;stroke-width:1}
+.trace-label{fill:#c9f31d;font-size:16px;font-weight:800;letter-spacing:.08em}
+.trace-line{fill:none;stroke-linejoin:round;stroke-width:4}
+.trace-line--can{stroke:#c9f31d}.trace-line--lin{stroke:#9ca47d}
+.trace-marker circle{fill:#070909;stroke:#c9f31d;stroke-width:4}
+.performance-label{fill:#aab08f;font-size:15px;font-weight:800;letter-spacing:.1em}
+.performance-track{fill:#141713;stroke:#2d3326;stroke-width:1}
+.performance-bar--before{fill:#4c5241}.performance-bar--after{fill:#c9f31d}
+.performance-value{fill:#fff;font-size:17px;font-weight:800;text-anchor:end}.performance-value--accent{fill:#c9f31d;text-anchor:start}
+.performance-arrow{fill:none;stroke:#c9f31d;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+.performance-gain{fill:#c9f31d;font-size:27px;font-weight:800}
+@media(max-width:767px){.about__section .section-heading h2{font-size:clamp(32px,8.5vw,44px)}.about__section .about-lead p{font-size:20px}.about__section .about-detail p{font-size:16px}.case-visual{margin-top:20px}}
+@media(max-width:430px){.hero-copy .designers{font-size:clamp(20px,6.3vw,24px);letter-spacing:-.035em}.case-visual figcaption{font-size:10px}.diagram-corner-label{font-size:11px}}
