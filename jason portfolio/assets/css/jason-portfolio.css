@@ -143,3 +143,14 @@ body,main{background:#000}.about__section{background:#050505}.dark-panel{backgro
 .performance-gain{fill:#c9f31d;font-size:27px;font-weight:800}
 @media(max-width:767px){.about__section .section-heading h2{font-size:clamp(32px,8.5vw,44px)}.about__section .about-lead p{font-size:20px}.about__section .about-detail p{font-size:16px}.case-visual{margin-top:20px}}
 @media(max-width:430px){.hero-copy .designers{font-size:clamp(20px,6.3vw,24px);letter-spacing:-.035em}.case-visual figcaption{font-size:10px}.diagram-corner-label{font-size:11px}}
+
+/* Default-open case studies with aligned desktop rows */
+@media(min-width:1200px){
+  .case-study-grid{align-items:stretch}
+  .ivv-case-study:not([open]){align-self:start}
+  .ivv-case-study[open]{display:flex;flex-direction:column;height:100%}
+  .ivv-case-study[open] summary{min-height:260px}
+  .ivv-case-study[open] .case-content{display:flex;flex:1;flex-direction:column}
+  .ivv-case-study[open] .case-content>p{min-height:120px}
+  .ivv-case-study[open] .case-content .tags{margin-top:auto}
+}
